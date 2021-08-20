@@ -17,6 +17,7 @@
 		D986686626CF66C500557E80 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986686526CF66C500557E80 /* ComplicationController.swift */; };
 		D986686826CF66C600557E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986686726CF66C600557E80 /* Assets.xcassets */; };
 		D986686B26CF66C600557E80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986686A26CF66C600557E80 /* Preview Assets.xcassets */; };
+		D986687D26CF689D00557E80 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986687C26CF689D00557E80 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D986686A26CF66C600557E80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D986686C26CF66C600557E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D986686D26CF66C600557E80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D986687C26CF689D00557E80 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				D986685D26CF66C500557E80 /* Lega_WatchApp.swift */,
 				D986685F26CF66C500557E80 /* ContentView.swift */,
+				D986687B26CF687800557E80 /* Model */,
 				D986686126CF66C500557E80 /* NotificationController.swift */,
 				D986686326CF66C500557E80 /* NotificationView.swift */,
 				D986686526CF66C500557E80 /* ComplicationController.swift */,
@@ -139,6 +142,14 @@
 				D986686A26CF66C600557E80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D986687B26CF687800557E80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D986687C26CF689D00557E80 /* ModelData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				D986686626CF66C500557E80 /* ComplicationController.swift in Sources */,
 				D986685E26CF66C500557E80 /* Lega_WatchApp.swift in Sources */,
 				D986686426CF66C500557E80 /* NotificationView.swift in Sources */,
+				D986687D26CF689D00557E80 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
