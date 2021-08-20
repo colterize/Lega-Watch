@@ -14,7 +14,7 @@ struct LocationSummary: View {
         VStack{
             Text(lega.summary)
         }
-        .navigationTitle(lega.name)
+        .navigationTitle("Summary")
     }
 }
 

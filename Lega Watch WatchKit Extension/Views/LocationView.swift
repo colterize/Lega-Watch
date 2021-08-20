@@ -16,6 +16,7 @@ struct LocationView: View {
                 }
             }
         }
+        .navigationTitle("Lega")
     }
 }
 
