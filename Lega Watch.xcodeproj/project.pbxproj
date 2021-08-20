@@ -18,6 +18,11 @@
 		D986686826CF66C600557E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986686726CF66C600557E80 /* Assets.xcassets */; };
 		D986686B26CF66C600557E80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986686A26CF66C600557E80 /* Preview Assets.xcassets */; };
 		D986687D26CF689D00557E80 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986687C26CF689D00557E80 /* ModelData.swift */; };
+		D986688126CF6E4B00557E80 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688026CF6E4B00557E80 /* LocationView.swift */; };
+		D986688326CF6E5B00557E80 /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688226CF6E5B00557E80 /* LocationRow.swift */; };
+		D986688526CF6E7200557E80 /* LocationPulsation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688426CF6E7200557E80 /* LocationPulsation.swift */; };
+		D986688726CF6E7F00557E80 /* LocationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688626CF6E7F00557E80 /* LocationSummary.swift */; };
+		D986688926CF6E9700557E80 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688826CF6E9700557E80 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		D986686C26CF66C600557E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D986686D26CF66C600557E80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D986687C26CF689D00557E80 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		D986688026CF6E4B00557E80 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		D986688226CF6E5B00557E80 /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
+		D986688426CF6E7200557E80 /* LocationPulsation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPulsation.swift; sourceTree = "<group>"; };
+		D986688626CF6E7F00557E80 /* LocationSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummary.swift; sourceTree = "<group>"; };
+		D986688826CF6E9700557E80 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 		D986685C26CF66C500557E80 /* Lega Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D986687F26CF6E2400557E80 /* Views */,
 				D986685D26CF66C500557E80 /* Lega_WatchApp.swift */,
 				D986685F26CF66C500557E80 /* ContentView.swift */,
 				D986687B26CF687800557E80 /* Model */,
@@ -150,6 +161,18 @@
 				D986687C26CF689D00557E80 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D986687F26CF6E2400557E80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D986688026CF6E4B00557E80 /* LocationView.swift */,
+				D986688226CF6E5B00557E80 /* LocationRow.swift */,
+				D986688426CF6E7200557E80 /* LocationPulsation.swift */,
+				D986688626CF6E7F00557E80 /* LocationSummary.swift */,
+				D986688826CF6E9700557E80 /* LocationDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +303,15 @@
 			files = (
 				D986686226CF66C500557E80 /* NotificationController.swift in Sources */,
 				D986686026CF66C500557E80 /* ContentView.swift in Sources */,
+				D986688926CF6E9700557E80 /* LocationDetailView.swift in Sources */,
 				D986686626CF66C500557E80 /* ComplicationController.swift in Sources */,
+				D986688526CF6E7200557E80 /* LocationPulsation.swift in Sources */,
 				D986685E26CF66C500557E80 /* Lega_WatchApp.swift in Sources */,
+				D986688126CF6E4B00557E80 /* LocationView.swift in Sources */,
+				D986688326CF6E5B00557E80 /* LocationRow.swift in Sources */,
 				D986686426CF66C500557E80 /* NotificationView.swift in Sources */,
 				D986687D26CF689D00557E80 /* ModelData.swift in Sources */,
+				D986688726CF6E7F00557E80 /* LocationSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

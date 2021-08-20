@@ -12,7 +12,7 @@ struct Lega_WatchApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                LocationView()
             }
         }
 
