@@ -91,6 +91,7 @@ extension Color {
     static let pulsatingColorH = Color.rgb(r: 255, g: 227, b: 227).opacity(0.35)
     static let pulsatingColor1H = Color.rgb(r: 255, g: 228, b: 228).opacity(0.30)
     static let pulsatingColor2H = Color.rgb(r: 255, g: 193, b: 195).opacity(0.46)
-
+    static let Color1 = Color.rgb(r: 15, g: 105, b: 203).opacity(1)
+    static let Color2 = Color.rgb(r: 113, g: 229, b: 240).opacity(0.64)
    
 }

@@ -24,6 +24,8 @@
 		D986688526CF6E7200557E80 /* LocationPulsation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688426CF6E7200557E80 /* LocationPulsation.swift */; };
 		D986688726CF6E7F00557E80 /* LocationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688626CF6E7F00557E80 /* LocationSummary.swift */; };
 		D986688926CF6E9700557E80 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986688826CF6E9700557E80 /* LocationDetailView.swift */; };
+		E0DF403D26D348F200C0AA3D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF403C26D348F200C0AA3D /* ChartView.swift */; };
+		E0DF403F26D3492900C0AA3D /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF403E26D3492900C0AA3D /* Report.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		D986688426CF6E7200557E80 /* LocationPulsation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPulsation.swift; sourceTree = "<group>"; };
 		D986688626CF6E7F00557E80 /* LocationSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummary.swift; sourceTree = "<group>"; };
 		D986688826CF6E9700557E80 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		E0DF403C26D348F200C0AA3D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		E0DF403E26D3492900C0AA3D /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,6 @@
 			children = (
 				D986687F26CF6E2400557E80 /* Views */,
 				D986685D26CF66C500557E80 /* Lega_WatchApp.swift */,
-				D986685F26CF66C500557E80 /* ContentView.swift */,
 				D986687B26CF687800557E80 /* Model */,
 				D986686126CF66C500557E80 /* NotificationController.swift */,
 				D986686326CF66C500557E80 /* NotificationView.swift */,
@@ -161,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D986687C26CF689D00557E80 /* ModelData.swift */,
+				E0DF403E26D3492900C0AA3D /* Report.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +178,8 @@
 				D986688626CF6E7F00557E80 /* LocationSummary.swift */,
 				D986688826CF6E9700557E80 /* LocationDetailView.swift */,
 				22A44EE726D3446700B9300A /* PulsationView.swift */,
+				E0DF403C26D348F200C0AA3D /* ChartView.swift */,
+				D986685F26CF66C500557E80 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,12 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A44EE826D3446700B9300A /* PulsationView.swift in Sources */,
+				E0DF403D26D348F200C0AA3D /* ChartView.swift in Sources */,
 				D986686226CF66C500557E80 /* NotificationController.swift in Sources */,
 				D986686026CF66C500557E80 /* ContentView.swift in Sources */,
 				D986688926CF6E9700557E80 /* LocationDetailView.swift in Sources */,
 				D986686626CF66C500557E80 /* ComplicationController.swift in Sources */,
 				D986688526CF6E7200557E80 /* LocationPulsation.swift in Sources */,
 				D986685E26CF66C500557E80 /* Lega_WatchApp.swift in Sources */,
+				E0DF403F26D3492900C0AA3D /* Report.swift in Sources */,
 				D986688126CF6E4B00557E80 /* LocationView.swift in Sources */,
 				D986688326CF6E5B00557E80 /* LocationRow.swift in Sources */,
 				D986686426CF66C500557E80 /* NotificationView.swift in Sources */,
