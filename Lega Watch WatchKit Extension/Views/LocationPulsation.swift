@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LocationPulsation: View {
     @StateObject var firebaseManager = FirebaseViewModel()
+    var firebaseId: Int
     
     var lega: Lega
     
@@ -33,7 +34,7 @@ struct LocationPulsation: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(lega.name)
         .onAppear() {
-            firebaseManager.makeFirebaseCall()
+            firebaseManager.makeFirebaseCall(id: firebaseId)
 //            firebaseManager.postToken(Token: firebaseManager.token)
         }
     }
@@ -41,6 +42,6 @@ struct LocationPulsation: View {
 
 struct LocationPulsation_Previews: PreviewProvider {
     static var previews: some View {
-        LocationPulsation(lega: Lega.legas[0])
+        LocationPulsation(firebaseId: 0, lega: Lega.legas[0])
     }
 }

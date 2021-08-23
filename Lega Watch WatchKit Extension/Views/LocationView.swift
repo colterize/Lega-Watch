@@ -12,7 +12,7 @@ struct LocationView: View {
         List {
             ForEach(Lega.legas) { viewData in
                 NavigationLink(destination: LocationDetailView(id: viewData.id)) {
-                    LocationRow(lega: viewData)
+                    LocationRow(lega: viewData, firebaseId: viewData.id)
                 }
                 
             }

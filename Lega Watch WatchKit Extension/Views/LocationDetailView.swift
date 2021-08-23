@@ -14,7 +14,7 @@ struct LocationDetailView: View {
     var body: some View {
         TabView(selection: $currentTab,
                 content:  {
-                    LocationPulsation(lega: Lega.legas[id])
+                    LocationPulsation(firebaseId: id, lega: Lega.legas[id])
                     LocationSummary(lega: Lega.legas[id])
                 })
 

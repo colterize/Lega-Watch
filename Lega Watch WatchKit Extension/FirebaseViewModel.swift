@@ -16,10 +16,16 @@ class FirebaseViewModel: ObservableObject {
     @Published var result: Int?
 
     // funsgi manggil data firebase
-    func makeFirebaseCall() {
+    func makeFirebaseCall(id: Int) {
+        var firePath = ""
+        if id == 0 {
+            firePath = "indah-1"
+        } else {
+            firePath = "ardy-1"
+        }
         // data.usId kalau kosong maka error di bagian bawah karena data tidak ditemukan
         // makanya butuh optional value seperti ardy-1
-        let ref = Database.database().reference(withPath: "indah-1")
+        let ref = Database.database().reference(withPath: firePath)
         // data.senId juga tidak boleh kosong karena itu path firebase buat baca data gasValue
         let sensorRef = ref.child("sensor-1").child("gasValue")
         sensorRef.queryLimited(toLast: 1).observe(.value) { (snapshot) in

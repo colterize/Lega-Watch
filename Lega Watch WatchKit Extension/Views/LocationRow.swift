@@ -10,6 +10,7 @@ import SwiftUI
 struct LocationRow: View {
     @StateObject var firebasemodel = FirebaseViewModel()
     var lega: Lega
+    var firebaseId: Int
 
     var body: some View {
         HStack {
@@ -30,7 +31,7 @@ struct LocationRow: View {
 
         }
         .onAppear(){
-            firebasemodel.makeFirebaseCall()
+            firebasemodel.makeFirebaseCall(id: firebaseId)
         }
             
     }
@@ -38,7 +39,7 @@ struct LocationRow: View {
 
 struct LocationRow_Previews: PreviewProvider {
     static var previews: some View {
-        LocationRow(lega: Lega.legas[0])
+        LocationRow(lega: Lega.legas[0], firebaseId: 0)
     }
 }
 
