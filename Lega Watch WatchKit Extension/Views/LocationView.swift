@@ -14,6 +14,7 @@ struct LocationView: View {
                 NavigationLink(destination: LocationDetailView(id: viewData.id)) {
                     LocationRow(lega: viewData)
                 }
+                
             }
         }
         .navigationTitle("Lega")

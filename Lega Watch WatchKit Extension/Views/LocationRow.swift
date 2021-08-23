@@ -8,16 +8,31 @@
 import SwiftUI
 
 struct LocationRow: View {
+    @StateObject var firebasemodel = FirebaseViewModel()
     var lega: Lega
 
     var body: some View {
         HStack {
-            Image(lega.imageData)
-                .resizable()
-                .frame(width: 25, height: 25)
+            Image(systemName: "mappin.and.ellipse")
+                .scaledToFit()
+                .frame(height: 20)
+                .foregroundColor(Color(#colorLiteral(red: 0.09803921569, green: 0.7098039216, blue: 0.9882352941, alpha: 1)))
                 .padding()
-            Text(lega.name)
+            
+            VStack(alignment: .leading){
+                Text(lega.name)
+                Text(firebasemodel.healthStatus)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4274509804, green: 0.4470588235, blue: 0.4705882353, alpha: 1)))
+
+            }
+            .font(.system(size: 15, weight: .regular, design: .rounded))
+            .padding(.init(top: 14, leading: 5, bottom: 14, trailing: 0))
+
         }
+        .onAppear(){
+            firebasemodel.makeFirebaseCall()
+        }
+            
     }
 }
 
@@ -26,3 +41,5 @@ struct LocationRow_Previews: PreviewProvider {
         LocationRow(lega: Lega.legas[0])
     }
 }
+
+
