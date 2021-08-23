@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A44EE826D3446700B9300A /* PulsationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A44EE726D3446700B9300A /* PulsationView.swift */; };
 		D986684D26CF66C200557E80 /* Lega Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D986684C26CF66C200557E80 /* Lega Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D986685226CF66C500557E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986685126CF66C500557E80 /* Assets.xcassets */; };
 		D986685926CF66C500557E80 /* Lega Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D986685826CF66C500557E80 /* Lega Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22A44EE726D3446700B9300A /* PulsationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsationView.swift; sourceTree = "<group>"; };
 		D986684826CF66C200557E80 /* Lega Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lega Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D986684C26CF66C200557E80 /* Lega Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lega Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D986685126CF66C500557E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				D986688426CF6E7200557E80 /* LocationPulsation.swift */,
 				D986688626CF6E7F00557E80 /* LocationSummary.swift */,
 				D986688826CF6E9700557E80 /* LocationDetailView.swift */,
+				22A44EE726D3446700B9300A /* PulsationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A44EE826D3446700B9300A /* PulsationView.swift in Sources */,
 				D986686226CF66C500557E80 /* NotificationController.swift in Sources */,
 				D986686026CF66C500557E80 /* ContentView.swift in Sources */,
 				D986688926CF6E9700557E80 /* LocationDetailView.swift in Sources */,

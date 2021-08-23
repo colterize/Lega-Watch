@@ -12,9 +12,17 @@ struct LocationPulsation: View {
     
     var body: some View {
         VStack{
-            Text(lega.name)
+            ZStack{
+                Pulsation()
+                
+            }
+            
             Image(lega.imageData)
+                .resizable()
+                .frame(width: 50, height: 50, alignment: .center)
+        
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(lega.name)
     }
 }
