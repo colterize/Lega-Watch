@@ -69,6 +69,7 @@ struct Pulsation:View {
                             .frame(width: 40, height: 40)
 
                     }
+                    .padding(.top, 15)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .onAppear {
                         self.pulsate.toggle()

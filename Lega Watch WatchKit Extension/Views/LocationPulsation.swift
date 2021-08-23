@@ -8,22 +8,34 @@
 import SwiftUI
 
 struct LocationPulsation: View {
+    @StateObject var firebaseManager = FirebaseViewModel()
+    
     var lega: Lega
     
     var body: some View {
         VStack{
             ZStack{
-                Pulsation()
+                if firebaseManager.isHealthy {
+                    Pulsation()
+                } else {
+                    Pulsation1()
+                }
+//                Pulsation()
                 
             }
+            .frame(height: 150)
             
-            Image(lega.imageData)
-                .resizable()
-                .frame(width: 50, height: 50, alignment: .center)
+            Text(firebaseManager.healthStatus.uppercased())
+                .frame(height: 50, alignment: .top)
+                .font(.system(size: 20, weight: .regular, design: .rounded))
         
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(lega.name)
+        .onAppear() {
+            firebaseManager.makeFirebaseCall()
+//            firebaseManager.postToken(Token: firebaseManager.token)
+        }
     }
 }
 

@@ -6,9 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
+
+
 struct Lega_WatchApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
