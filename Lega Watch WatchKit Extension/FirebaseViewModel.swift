@@ -17,11 +17,12 @@ class FirebaseViewModel: ObservableObject {
     @Published var result: Int? {
         didSet {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm, dd-MM-y"
+            dateFormatter.dateFormat = "HH"
             let currentHour = dateFormatter.string(from: Date())
             chart.data.append(Report(hour: currentHour, revenue: result ?? 0))
             
             print(currentHour)
+            print(chart.test)
         }
     }
 

@@ -15,13 +15,17 @@ struct Report {
 
 class chartData: ObservableObject {
     var data = [Report]()
-//    var averageData: Int {
-//        for currentData in data {
-//            for hour in currentData {
-//                
-//            }
-//        }
-//    }
+    var test: Int {
+        var averageData = 0
+        for data2 in data {
+            if let currentHour = Int(data2.hour) {
+                if currentHour == 2 {
+                    averageData += data2.revenue
+                }
+            }
+        }
+        return averageData / data.count
+    }
     
 }
 
