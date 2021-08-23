@@ -10,8 +10,22 @@ import SwiftUI
 
 struct Report {
     let hour: String
-    let revenue: Double
+    let revenue: Int
 }
+
+class chartData: ObservableObject {
+    var data = [Report]()
+//    var averageData: Int {
+//        for currentData in data {
+//            for hour in currentData {
+//                
+//            }
+//        }
+//    }
+    
+}
+
+
 extension Report {
     static func all() -> [Report] {
     return [

@@ -13,12 +13,15 @@ import SwiftUI
 class FirebaseViewModel: ObservableObject {
 
 //    @ObservedObject var data: DeviceIotViewModel = DeviceIotViewModel()
+    @ObservedObject var chart = chartData()
     @Published var result: Int? {
         didSet {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm E, d MMM y"
+            dateFormatter.dateFormat = "HH:mm, dd-MM-y"
+            let currentHour = dateFormatter.string(from: Date())
+            chart.data.append(Report(hour: currentHour, revenue: result ?? 0))
             
-            print(dateFormatter.string(from: Date()))
+            print(currentHour)
         }
     }
 
