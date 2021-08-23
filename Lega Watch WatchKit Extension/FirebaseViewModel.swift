@@ -6,28 +6,35 @@
 //
 
 import Foundation
-import FirebaseDatabase
+import Firebase
 import FirebaseMessaging
 import SwiftUI
 
 class FirebaseViewModel: ObservableObject {
 
 //    @ObservedObject var data: DeviceIotViewModel = DeviceIotViewModel()
-    @Published var result: Int?
+    @Published var result: Int? {
+        didSet {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "HH:mm E, d MMM y"
+            
+            print(dateFormatter.string(from: Date()))
+        }
+    }
 
     // funsgi manggil data firebase
     func makeFirebaseCall(id: Int) {
         var firePath = ""
         if id == 0 {
-            firePath = "indah-1"
+            firePath = "sensor-1"
         } else {
-            firePath = "ardy-1"
+            firePath = "sensor-2"
         }
         // data.usId kalau kosong maka error di bagian bawah karena data tidak ditemukan
         // makanya butuh optional value seperti ardy-1
         let ref = Database.database().reference(withPath: firePath)
         // data.senId juga tidak boleh kosong karena itu path firebase buat baca data gasValue
-        let sensorRef = ref.child("sensor-1").child("gasValue")
+        let sensorRef = ref.child("gasValue")
         sensorRef.queryLimited(toLast: 1).observe(.value) { (snapshot) in
             let value = snapshot.value as? NSDictionary
             print(value ?? 0)
