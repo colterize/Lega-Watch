@@ -152,7 +152,7 @@ struct BarView: View {
     let report: Report
     var colors: [Color] = [Color.Color1,Color.Color2]
     var body : some View {
-        let value = report.revenue / 21.5
+        let value = report.revenue / 21
         let yValue = Swift.min(value,1000)
        
         return  HStack {
